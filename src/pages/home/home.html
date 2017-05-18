@@ -22,4 +22,9 @@
       <button ion-button secondary menuToggle><ion-icon name="locate"></ion-icon>Position actuelle</button>
     </div>
   </div>
+  <ion-buttons end>
+    <button ion-button (click)="addMarker()"><ion-icon name="add"></ion-icon>Add Marker</button>
+  </ion-buttons>
+
+  <div #map id="map"></div>
 </ion-content>
