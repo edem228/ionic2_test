@@ -3,12 +3,12 @@
     <button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
-     <ion-icon name="locate"></ion-icon><ion-title>Me géolocaliser</ion-title>
+     <ion-title><ion-icon name="locate"></ion-icon> Liste de présence</ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content>
-  <ion-list>
+  <!-- <ion-list>
     <button ion-item *ngFor="let item of items" (click)="itemTapped($event, item)">
       <ion-icon [name]="item.icon" item-left></ion-icon>
       {{item.title}}
@@ -16,6 +16,66 @@
         {{item.note}}
       </div>
     </button>
+  </ion-list> -->
+  <ion-list>
+    <p>Etudiants présents aujourd'hui</p>
+    <ion-item>
+      <ion-avatar item-left>
+        <img src="assets/imgs/img1.jpg">
+      </ion-avatar>
+      <h2>Finn</h2>
+      <h3>Don't Know What To Do!</h3>
+      <p>I've had a pretty messed up day. If we just...</p>
+    </ion-item>
+    <ion-item>
+      <ion-avatar item-left>
+        <img src="assets/imgs/img1.jpg">
+      </ion-avatar>
+      <h2>Finn</h2>
+      <h3>Don't Know What To Do!</h3>
+      <p>I've had a pretty messed up day. If we just...</p>
+    </ion-item>
+    <ion-item>
+      <ion-avatar item-left>
+        <img src="assets/imgs/img1.jpg">
+      </ion-avatar>
+      <h2>Student1</h2>
+      <h3>Don't Know What To Do!</h3>
+      <p>I've had a pretty messed up day. If we just...</p>
+    </ion-item>
+    <ion-item>
+      <ion-avatar item-left>
+        <img src="assets/imgs/img1.jpg">
+      </ion-avatar>
+      <h2>Finn</h2>
+      <h3>Don't Know What To Do!</h3>
+      <p>I've had a pretty messed up day. If we just...</p>
+    </ion-item>
+      <p>Etudiants présents le jj/mm/aaaa</p>
+    <ion-item>
+      <ion-avatar item-left>
+        <img src="assets/imgs/img1.jpg">
+      </ion-avatar>
+      <h2>Eli</h2>
+      <h3>Don't Know What To Do!</h3>
+      <p>I've had a pretty messed up day. If we just...</p>
+    </ion-item>
+    <ion-item>
+      <ion-avatar item-left>
+        <img src="assets/imgs/img1.jpg">
+      </ion-avatar>
+      <h2>Alex</h2>
+      <h3>Don't Know What To Do!</h3>
+      <p>I've had a pretty messed up day. If we just...</p>
+    </ion-item>
+    <ion-item>
+      <ion-avatar item-left>
+        <img src="assets/imgs/img1.jpg">
+      </ion-avatar>
+      <h2>Zool</h2>
+      <h3>Don't Know What To Do!</h3>
+      <p>I've had a pretty messed up day. If we just...</p>
+    </ion-item>
   </ion-list>
   <div *ngIf="selectedItem" padding>
     You navigated here from <b>{{selectedItem.title}}</b>
