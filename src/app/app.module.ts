@@ -5,6 +5,7 @@ import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { ListPage } from '../pages/list/list';
+import { AproposPage } from '../pages/apropos/apropos';
 // import { TestPage } from '../pages/test/test';
 
 
@@ -16,7 +17,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     MyApp,
     HomePage,
     ListPage,
-    // TestPage
+    AproposPage
   ],
   imports: [
     BrowserModule,
@@ -27,6 +28,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     MyApp,
     HomePage,
     ListPage,
+    AproposPage
     // TestPage
   ],
   providers: [
